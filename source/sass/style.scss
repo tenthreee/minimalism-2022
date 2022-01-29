@@ -1,0 +1,18 @@
+// Служебные
+@import "normalize.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "scaffolding.scss";
+
+// БЭМ-блоки
+@import "blocks/page-header.scss";
+@import "blocks/navigation.scss";
+@import "blocks/button.scss";
+@import "blocks/about.scss";
+@import "blocks/services.scss";
+@import "blocks/partners.scss";
+@import "blocks/projects.scss";
+@import "blocks/planning.scss";
+@import "blocks/careers.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/contacts.scss";

@@ -1,0 +1,59 @@
+.planning {
+  @include container;
+  margin-bottom: 150px;
+}
+
+.planning-list {
+  @include list-unstyled;
+  display: flex;
+
+  text-align: center;
+}
+
+.planning-item {
+  margin-right: 80px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.planning-title {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding-top: 180px;
+
+  font-size: 30px;
+  line-height: 36px;
+  color: $bold-text-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 140px;
+    height: 140px;
+    background-color: $accent-color-cold;
+    background-image: url("../img/bar-chart.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &__finance::before {
+    background-image: url("../img/dollar-sign.svg");
+  }
+
+  &__analytics::before {
+    background-image: url("../img/search.svg");
+  }
+}
+
+.planning-description {
+  margin: 0;
+}

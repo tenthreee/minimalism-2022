@@ -1,0 +1,32 @@
+.careers {
+  @include container;
+  margin-bottom: 150px;
+}
+
+.careers-title {
+  @include title;
+
+  margin: 0;
+  margin-bottom: 150px;
+}
+
+.careers-table {
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+
+  & th {
+    text-transform: uppercase;
+    text-align: left;
+
+    padding-bottom: 80px;
+  }
+
+  & tr:not(:last-of-type) td {
+    padding-bottom: 80px;
+  }
+
+  & b {
+    font-family: $font-semibold;
+  }
+}

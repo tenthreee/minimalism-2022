@@ -1,0 +1,71 @@
+.about {
+  @include container;
+  display: flex;
+  margin-bottom: 200px;
+}
+
+.about-wrapper {
+  margin-right: 80px;
+}
+
+.about-name {
+  color: $accent-color-dark;
+  padding-left: 110px;
+  margin-bottom: 20px;
+
+  display: block;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 100px;
+    height: 1px;
+    background-color: $accent-color-dark;
+  }
+}
+
+.about-title {
+  font-size: 72px;
+  line-height: 72px;
+  font-family: $font-bold;
+  color: $bold-text-color;
+
+  display: block;
+  padding-bottom: 40px;
+}
+
+.about-description {
+  margin: 0;
+  padding-bottom: 50px;
+  padding-right: 50px;
+}
+
+.about-buttons {
+  margin-bottom: 60px;
+}
+
+.about-button {
+  margin-right: 20px;
+}
+
+.about-note {
+  font-size: 12px;
+  line-height: 16px;
+  position: relative;
+  margin: 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 30px;
+
+    width: 100%;
+    height: 1px;
+    background-color: #E5E7EB;
+  }
+}

@@ -1,0 +1,39 @@
+.partners {
+  margin-bottom: 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  background-color: $accent-color-warm;
+}
+
+.partners-wrapper {
+  @include container;
+}
+
+.partners-text {
+  font-size: 20px;
+  line-height: 28px;
+  color: #9CA3AF;
+
+  display: block;
+  margin-bottom: 20px;
+}
+
+.partners-list {
+  @include list-unstyled;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.partners-link {
+  &:hover {
+    .partners-logo {
+      fill: $accent-color-dark;
+    }
+  }
+}
+
+.partners-logo {
+  transition: 0.3s;
+}

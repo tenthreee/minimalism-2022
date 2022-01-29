@@ -1,0 +1,38 @@
+.contacts {
+  @include container;
+  padding: 110px 0;
+}
+
+.contacts-title {
+  @include title;
+
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.contacts-text {
+  text-align: center;
+
+  margin: 0;
+  margin-bottom: 100px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.contacts-list {
+  @include list-unstyled;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 460px;
+  margin: 0 auto;
+}
+
+.contacts-link svg path {
+  transition: 0.3s;
+}
+
+.contacts-link:hover svg path {
+    stroke: $accent-color-dark;
+}

@@ -1,0 +1,108 @@
+.projects {
+  @include container;
+  margin-bottom: 150px;
+}
+
+.projects-title {
+  @include title;
+
+  display: block;
+  margin-right: 80px;
+  margin-left: 80px;
+  margin-bottom: 150px;
+}
+
+.projects-list {
+  @include list-unstyled;
+
+  display: grid;
+  grid-template-areas:
+    "project-1 project-2"
+    "project-3 project-2"
+    "project-4 project-4";
+  gap: 30px;
+
+  & img {
+    display: block;
+  }
+}
+
+.projects-item {
+  position: relative;
+
+  &:hover {
+    .projects-info {
+      // display: block;
+      opacity: 1;
+    }
+  }
+}
+
+.project-1 {
+  grid-area: project-1;
+}
+
+.project-2 {
+  grid-area: project-2;
+}
+
+.project-3 {
+  grid-area: project-3;
+}
+
+.project-4 {
+  grid-area: project-4;
+}
+
+.projects-info {
+  // display: none;
+  opacity: 0;
+
+  padding: 20px 25px;
+  box-sizing: border-box;
+
+  position: absolute;
+  transition: 0.3s;
+
+  bottom: 20px;
+  left: 20px;
+
+  width: calc(100% - 40px);
+  background-color: $base-color;
+
+  &__open {
+    opacity: 1;
+  }
+}
+
+.projects-link {
+  @include unlink;
+
+  display: block;
+  position: relative;
+
+  color: $bold-text-color;
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    right: 0;
+    top: 50%;
+
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+
+    background-image: url("../img/arrow-right-big.svg");
+  }
+}
+
+.projects-type {
+  display: block;
+
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #9CA3AF;
+}

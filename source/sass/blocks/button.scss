@@ -1,0 +1,27 @@
+.button {
+  @include unlink;
+  
+  color: $accent-color-dark;
+  padding: 15px 30px;
+
+  border: 2px solid $accent-color-dark;
+  border-radius: 6px;
+
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $accent-color-cold;
+  }
+}
+
+.button-dark {
+  color: $base-color;
+  background-color: $accent-color-dark;
+
+  transition: 0.3s;
+
+  &:hover {
+    color: $accent-color-dark;
+    background-color: $accent-color-cold;
+  }
+}

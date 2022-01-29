@@ -1,0 +1,100 @@
+.services {
+  @include container;
+  margin-bottom: 200px;
+}
+
+.services-title {
+  @include title;
+  display: block;
+
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 200px;
+}
+
+.services-accent {
+  color: $accent-color-dark;
+}
+
+.services-list {
+  @include list-unstyled;
+  padding-left: 490px;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 60px;
+  column-gap: 70px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: -40px;
+
+    width: 440px;
+    height: 622px;
+    background-image: url("../img/image-1.jpeg");
+  }
+}
+
+.services-item {
+  max-width: 310px;
+}
+
+.services-name {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-family: $font-semibold;
+  color: $bold-text-color;
+}
+
+.services-description {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.services-link {
+  @include unlink;
+  position: relative;
+
+  font-size: 12px;
+  line-height: 16px;
+  color: $accent-color-dark;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/arrow-right.svg");
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: $accent-color-dark;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+  }
+
+  &:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+  }
+}
