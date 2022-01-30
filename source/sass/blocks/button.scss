@@ -1,6 +1,7 @@
 .button {
   @include unlink;
-  
+
+  font-family: inherit; // for <button>
   color: $accent-color-dark;
   padding: 15px 30px;
 

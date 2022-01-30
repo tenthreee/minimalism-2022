@@ -1,6 +1,5 @@
 .navigation {
-  width: 1180px;
-  margin: 0 auto;
+  @include container;
 
   display: flex;
   justify-content: space-between;
@@ -10,22 +9,20 @@
 .navigation-list {
   @include list-unstyled;
   display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
 }
 
 .navigation-item {
-  margin-right: 80px;
-
-  &:last-of-type {
-    margin-right: 0;
-  }
-
   &:not(:last-of-type) {
     overflow: hidden;
+    margin-right: 80px;
   }
 }
 
 .navigation-link {
   @include unlink;
+  padding: 15px 0;
   color: $regular-text-color;
 
   & span {
