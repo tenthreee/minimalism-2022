@@ -23,10 +23,14 @@
   @include list-unstyled;
 
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 
-  width: 460px;
+  max-width: 460px;
   margin: 0 auto;
+}
+
+.contacts-item:not(:nth-child(6n)) {
+  margin-right: 50px;
 }
 
 .contacts-link svg path {

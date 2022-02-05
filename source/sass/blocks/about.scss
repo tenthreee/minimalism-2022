@@ -1,6 +1,7 @@
 .about {
   @include container;
   display: flex;
+  justify-content: space-between;
   margin-bottom: 200px;
 }
 
@@ -46,6 +47,7 @@
 }
 
 .about-buttons {
+  display: flex;
   margin-bottom: 60px;
 }
 
@@ -68,4 +70,8 @@
     height: 1px;
     background-color: #E5E7EB;
   }
+}
+
+.about-image {
+  min-width: 478px;
 }

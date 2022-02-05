@@ -6,6 +6,11 @@
   align-items: center;
 }
 
+.navigation-logo {
+  flex-shrink: 0;
+  margin-right: 80px;
+}
+
 .navigation-list {
   @include list-unstyled;
   display: flex;
@@ -17,6 +22,7 @@
   &:not(:last-of-type) {
     overflow: hidden;
     margin-right: 80px;
+    margin-bottom: 30px;
   }
 }
 

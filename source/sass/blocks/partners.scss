@@ -23,7 +23,11 @@
   @include list-unstyled;
 
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.partners-item:not(:nth-child(5n)) {
+  margin-right: 97px;
 }
 
 .partners-link {
