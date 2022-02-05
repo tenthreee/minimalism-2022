@@ -33,10 +33,12 @@
   margin-right: 50px;
 }
 
-.contacts-link svg path {
+.contacts-link svg {
+  stroke: #6B7280;
+  stroke-width: 3px;
   transition: 0.3s;
 }
 
-.contacts-link:hover svg path {
+.contacts-link:hover svg {
     stroke: $accent-color-dark;
 }
