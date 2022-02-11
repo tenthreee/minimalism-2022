@@ -13,7 +13,7 @@
 .partners-text {
   font-size: 20px;
   line-height: 28px;
-  color: #9CA3AF;
+  color: $accent-text-color;
 
   display: block;
   margin-bottom: 20px;
@@ -39,6 +39,6 @@
 }
 
 .partners-logo {
-  fill: #B4A6A2;
+  fill: #b4a6a2;
   transition: 0.3s;
 }
